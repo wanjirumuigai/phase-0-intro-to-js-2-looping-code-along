@@ -3,14 +3,13 @@
 let messages = [];
 
 function writeCards(names,wish) {
-    for (i=0; i<names.length; i++) {
-        messages.unshift(`Thank you, ${names[i]}, for the wonderful ${wish} gift`);
+    for (let i=0; i<names.length; i++) {
+        messages.push(`Thank you, ${names[i]}, for the wonderful ${wish} gift!`);
+        
     }
-    console.log(messages);
-
+    return messages; 
 }
 
-writeCards(["Ada", "Brendan", "Ali"], "birthday");
 
 //while loop
 function countDown(number) {
